@@ -1,0 +1,69 @@
+body {
+  background: linear-gradient(
+    to right,
+    rgba(0, 252, 255, 1) 0%,
+    rgba(255, 64, 0, 1) 100%
+  );
+
+  text-align: center;
+
+  h1 {
+    font-size: 78px;
+  }
+}
+
+div {
+  margin: 0 20px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.cube-2d {
+  background: yellow;
+
+  &:hover {
+    transform: rotate(20deg);
+  }
+}
+
+.cube-3d {
+  background: yellow;
+  position: relative;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
+  & .cube-under {
+    // background: white;
+    background: rgb(69, 185, 252);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translate(33px, 54px);
+  }
+
+  & .cube-side {
+    background: rgb(250, 132, 132);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 28px;
+    bottom: 0;
+    transform: rotateY(79deg) translateX(-528px) skewY(15deg);
+  }
+
+  & .upper-side {
+    background: rgb(172, 183, 248);
+    position: absolute;
+    left: 7px;
+    right: 0;
+    top: -73px;
+    bottom: 0;
+    transform: rotateX(74deg) skew(15deg);
+  }
+}

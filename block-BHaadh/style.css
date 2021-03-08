@@ -1,0 +1,73 @@
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#00fcff), to(#ff4000));
+  background: linear-gradient(to right, #00fcff 0%, #ff4000 100%);
+  text-align: center;
+}
+
+body h1 {
+  font-size: 78px;
+}
+
+div {
+  margin: 0 20px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.cube-2d {
+  background: yellow;
+}
+
+.cube-2d:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.cube-3d {
+  background: yellow;
+  position: relative;
+}
+
+.cube-3d:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.cube-3d .cube-under {
+  background: #45b9fc;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transform: translate(33px, 54px);
+          transform: translate(33px, 54px);
+}
+
+.cube-3d .cube-side {
+  background: #fa8484;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 28px;
+  bottom: 0;
+  -webkit-transform: rotateY(79deg) translateX(-528px) skewY(15deg);
+          transform: rotateY(79deg) translateX(-528px) skewY(15deg);
+}
+
+.cube-3d .upper-side {
+  background: #acb7f8;
+  position: absolute;
+  left: 7px;
+  right: 0;
+  top: -73px;
+  bottom: 0;
+  -webkit-transform: rotateX(74deg) skew(15deg);
+          transform: rotateX(74deg) skew(15deg);
+}
+/*# sourceMappingURL=style.css.map */
